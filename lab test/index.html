@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Sales Commission Calculator</title>
+</head>
+<body>
+
+    <h2>Sales Commission Calculation</h2>
+
+    <!-- Form to collect manager name, month, and sales amount -->
+    <form action="calc_com.php" method="POST">
+
+        <!-- Input field for manager name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <!-- Input field for the month of sales -->
+        <label for="month">Month:</label>
+        <input type="text" id="month" name="month" required><br><br>
+        
+        <!-- Input field for sales amount (numbers only) -->
+        <label for="amount">Sales Amount:</label>
+        <input type="number" id="amount" name="amount" required><br><br>
+        
+        <!-- Submit button to calculate the commission -->
+        <input type="submit" value="Calculate Commission">
+    </form>
+
+</body>
+</html>
